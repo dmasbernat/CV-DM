@@ -1,0 +1,51 @@
+/* Fuente personalizada */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Tema oscuro por defecto */
+body.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+img {
+  max-width: 200px;
+  border: 3px solid #444;
+}
+
+/* Animaciones al aparecer */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover animado */
+.section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar enlaces */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00ffff !important;
+}

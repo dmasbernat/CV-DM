@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dmasbernat</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Navbar con enlaces -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">dmasbernat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formulario">Formulario</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-3" id="themeToggle">Cambiar Tema</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-5 pt-5">
+    <!-- Sección Descripción -->
+    <div id="descripcion" class="row section animate-on-scroll">
+      <div class="col-md-4 text-center">
+        <img src="foto.jpg" alt="Foto Perfil" class="img-fluid rounded-circle shadow">
+        <h3 class="mt-3">Daniel Masbernat</h3>
+      </div>
+      <div class="col-md-8">
+        <h4>Descripción Profesional</h4>
+        <p>
+          Desarrollador Full-Stack Trainee con experiencia en HTML, CSS, JavaScript y Java. Actualmente aprendiendo Python.
+          Experiencia trabajando con métodos ágiles, gestión de incidentes y enfoque integral en atención al cliente.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sección Contacto -->
+    <div id="contacto" class="row section animate-on-scroll mt-5">
+      <div class="col-md-12">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Email: <a href="mailto:dmasbernatd@gmail.com">dmasbernatd@gmail.com</a></li>
+          <li>Teléfono: +56 9 3892 8689</li>
+          <li>GitHub: <a href="https://github.com/dmasbernat" target="_blank">github.com/dmasbernat</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Experiencia laboral IT-->
+    <div id="experiencia" class="row section animate-on-scroll mt-5">
+      <div class="col-md-12">
+        <h4>Experiencia Laboral en IT</h4>
+        <h5>Accenture</h5>
+        <p><strong>Operations Care (N2 - Semi-senior) - Aeropuertos y Servicios (LATAM)</strong> (Enero 2024 - Diciembre 2024)</p>
+        <ul>
+          <li>Dirección y manejo de contingencias operacionales.</li>
+          <li>Supervisión y gestión de equipos técnicos.</li>
+          <li>Documentación de recetas para solución de problemas.</li>
+          <li>Capacitación de Niveles 1.</li>
+        </ul>
+        <p><strong>Operations Care (N1 - Junior) - Transversal (LATAM)</strong> (Junio 2022 - Enero 2024)</p>
+        <ul>
+          <li>Gestión y resolución de tickets de usuarios de LATAM.</li>
+          <li>Manejo de contingencias operacionales.</li>
+          <li>Solución de problemas técnicos a partir de recetas.</li>
+          <li>Contacto directo con usuarios para resolución de problemas.</li>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <!--Formación -->
+    <div id="formacion" class="row section animate-on-scroll mt-5">
+      <div class="col-md-12">
+        <h4>Formación Académica</h4>
+        <ul>
+          <li>Analista Programador - INACAP (En curso)</li>
+          <li>Desarrollo Web Full Stack Python - SENCE / Kibernum (En curso)</li>
+          <li>Desarrollo Web Full Stack Java - SENCE / Coding Dojo / Fundación Forge (2022)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Habilidades -->
+    <div id="habilidades" class="row section animate-on-scroll mt-5">
+      <div class="col-md-12">
+        <h4>Habilidades</h4>
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-success">CSS</span>
+        <span class="badge bg-warning text-dark">JavaScript</span>
+        <span class="badge bg-secondary">Java</span>
+        <span class="badge bg-info text-dark">Bootstrap</span>
+        <span class="badge bg-dark">Git/GitHub</span>
+      </div>
+    </div>
+
+    <!-- Sección Formulario -->
+    <div id="formulario" class="row section animate-on-scroll mt-5">
+      <div class="col-md-12">
+        <h4>Formulario de Contacto</h4>
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+            <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
